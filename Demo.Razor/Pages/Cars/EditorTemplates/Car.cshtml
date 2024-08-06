@@ -1,0 +1,18 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model CarViewModel
+<div asp-validation-summary="All" class="text-danger"></div>
+<div>
+    <label asp-for="MakeName" class="col-form-label"></label>
+    <input asp-for="MakeName" class="form-control" />
+    <span asp-validation-for="MakeId" class="text-danger"></span>
+</div>
+<div>
+    <label asp-for="Color" class="col-form-label"></label>
+    <input asp-for="Color" class="form-control"/>
+    <span asp-validation-for="Color" class="text-danger"></span>
+</div>
+<div>
+    <label asp-for="PetName" class="col-form-label"></label>
+    <input asp-for="PetName" class="form-control" />
+    <span asp-validation-for="PetName" class="text-danger"></span>
+</div>

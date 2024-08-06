@@ -1,0 +1,11 @@
+﻿@model CarViewModel
+@{
+    ViewData["Title"] = "Details";
+}
+<h1>Details for @Model.PetName</h1>
+@Html.DisplayForModel()
+<div>
+    <ItemEdit item-id="@Model.Id"></ItemEdit>
+    <ItemDelete item-id="@Model.Id"></ItemDelete>
+    <item-list></item-list>
+</div>
